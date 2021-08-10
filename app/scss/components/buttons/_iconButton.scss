@@ -1,0 +1,38 @@
+@mixin iconButton() {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: $color-white;
+
+    filter: drop-shadow(0px 0px 4px rgba(111, 97, 208, 0.14));
+
+    transition: all .2s ease;
+
+    svg path{
+        stroke: $color-black;
+    }
+
+    &:hover{
+        background-color: $color-primary;
+        svg path{
+            stroke: $color-white;
+        }
+    }
+
+    &_disabled{
+        svg path{
+            stroke: $color-disabled;
+        }
+        &:hover{
+            background-color: $color-white;
+            svg path{
+                stroke: $color-disabled;
+            }
+        }
+    }
+}

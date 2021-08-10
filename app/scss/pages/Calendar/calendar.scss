@@ -1,0 +1,196 @@
+@import './../../main.scss';
+
+@import './TasksList/task';
+@import './TasksList/taskcreator';
+@import './TasksList/tasklist';
+
+
+.calendarPage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+
+    &__days {
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            width: 32px;
+
+            font-weight: 600;
+            font-size: 16px;
+
+            text-align: center;
+
+            color: #1e174d;
+        }
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__today {
+        p {
+            font-weight: 500;
+            font-size: 18px;
+
+            text-transform: lowercase;
+
+            color: #6f61d0;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        button {
+            margin: 0;
+            width: 24px;
+            height: 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: none;
+            background-color: #ffffff00;
+
+            cursor: pointer;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__divider {
+        margin: 20px 0 30px 0;
+        width: 100%;
+        height: 1px;
+
+        background: #f7f6fb;
+        border-radius: 10px;
+    }
+}
+
+.string {
+    width: 100%;
+
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    transition: all 0.12s ease;
+
+    p {
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: #A59CE2;
+        color: #ffffff;
+    }
+}
+
+.current_date {
+    color: #309a74;
+}
+
+.date-secondary {
+    p {
+        color: #c8c8c8;
+    }
+}
+
+.warnigTitle {
+    p {
+        font-weight: 400;
+        font-size: 16px;
+
+        color: #d06361;
+    }
+}
+
+.warningList {
+    margin: 5px 0 0 0;
+    list-style: none;
+
+    li {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+
+        color: #736f8b;
+
+        &::before {
+            content: "• ";
+        }
+    }
+}
+
+.warningLink {
+    margin: 20px 0 0 0;
+
+    a {
+        font-size: 16px;
+
+        color: #9895a7;
+
+        text-decoration: none;
+
+        &::after {
+            content: "";
+
+            display: block;
+            width: 157px;
+            height: 1px;
+
+            background-color: rgba(152, 149, 167, 0.5);
+            border-radius: 5px;
+        }
+    }
+}
+
+.data_active {
+    background-color: #6f61d0;
+    color: #ffffff;
+}
+
+.tasks__menu{
+    width: 350px;
+}
+
+.taskGroup{
+    width: 100%;
+    @include taskGroup();
+}

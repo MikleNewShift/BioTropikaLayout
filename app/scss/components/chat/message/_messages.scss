@@ -1,0 +1,39 @@
+@mixin message() {
+    margin: 15px 0 0 0;
+    padding: 12px 20px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background: #f7f6fb;
+
+    .msgText {
+        p {
+            @include typography(14px, 400, $color-black);
+
+            line-height: 130%;
+        }
+    }
+
+    .msgTime {
+        margin: 0 0 0 15px;
+        p {
+            @include typography(13px, 300, $color-link);
+        }
+    }
+}
+
+@mixin incomingMsg() {
+    @include message();
+
+    align-self: flex-start;
+    border-radius: 0px 15px 15px 15px;
+}
+
+@mixin outcomingMsg() {
+    @include message();
+
+    align-self: flex-end;
+    border-radius: 15px 15px 0px 15px;
+}

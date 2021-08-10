@@ -1,0 +1,76 @@
+@import './Groups/Group';
+@import './Title/Title';
+@import './List/List';
+
+.recomendations {
+    margin: 40px 0 0 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__menu {
+        width: 350px;
+
+        :first-child{
+            margin: 0;
+        }
+    }
+
+    &__content {
+        width: 0;
+    }
+
+    &__list {
+        width: 500px;
+        height: 510px;
+
+        overflow-y: scroll;
+    }
+}
+
+.recomendaton__group{
+    margin: 20px 0 0 0;
+    @include recomendationGroup;
+}
+
+.group_yellow {
+    .point_active {
+        background-color: #e2d341 !important;
+    }
+
+    .group::before {
+        background-color: #e2d341;
+    }
+}
+
+.group_green {
+    .point_active {
+        background-color: #61d0a7 !important;
+    }
+
+    &::before {
+        background-color: #61d0a7 !important;
+    }
+}
+
+.group_red {
+    .point_active {
+        background-color: #c05d97 !important;
+    }
+
+    &::before {
+        background-color: #c05d97;
+    }
+}
+
+.group_purple {
+    .point_active {
+        background-color: #6f61d0;
+    }
+
+    &::before {
+        background-color: #6f61d0;
+    }
+}

@@ -1,0 +1,121 @@
+@import "./../../main.scss";
+
+.title {
+    margin: 0 0 40px 0;
+
+    h2 {
+        @include typography(32px, 700, $color-black);
+    }
+}
+
+.block {
+    margin: 0 0 50px 0;
+}
+
+.col-list {
+    display: flex;
+    align-items: flex-start;
+    & .col {
+        margin: 0 30px 0 0;
+
+        & .headline {
+            margin: 0 0 20px 0;
+            p {
+                @include font-headline($color-primary);
+            }
+        }
+    }
+}
+
+.title-list {
+    p {
+        @include font-title($color-black);
+    }
+}
+
+.headline-list {
+    p {
+        @include font-headline($color-black);
+    }
+}
+
+.body-list {
+    p {
+        @include font-body($color-black);
+    }
+}
+
+.component {
+    padding: 20px;
+
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px dashed $color-disabled;
+
+    :first-child {
+        margin: 0;
+    }
+}
+
+button {
+    margin: 10px 0 0 0;
+
+    @include button();
+}
+
+.btn-hover {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.icon-btn {
+    margin: 11px 0 0 0;
+    @include iconButton();
+}
+
+.icon-btn_hover {
+    background-color: $color-primary;
+    svg path {
+        stroke: $color-white;
+    }
+}
+
+.checkbox{
+    margin: 12px 0 0 0;
+
+    @include checkbox();    
+}
+
+.avatar{
+    @include avatar();
+}
+
+.link{
+    margin: 20px 0 0 0;
+    @include link();
+}
+
+.task{
+    margin: 20px 0 0 0;
+    width: 350px;
+    @include taskGroup();
+}
+
+.recomendation{
+    margin: 20px 0 0 0;
+    width: 350px;
+
+    @include recomendationGroup();
+}
+
+.message_incoming{
+    width: 214px;
+    @include incomingMsg();
+}
+
+.message_outcoming{
+    width: 245px;
+    @include outcomingMsg();
+}

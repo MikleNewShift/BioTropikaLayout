@@ -1,0 +1,183 @@
+@mixin groupLabel() {
+    padding: 0 40px 0 30px;
+
+    margin: 20px 0 0 0;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #ffffff00;
+    border: 1px solid #f7f6fb;
+    box-sizing: border-box;
+
+    position: relative;
+
+    box-shadow: 0px 0px 4px rgba(111, 97, 208, 0.14);
+    border-radius: 15px;
+
+    transition: all 0.2s ease;
+
+    
+
+    &__title {
+        p {
+            font-weight: 500;
+            font-size: 16px;
+
+            color: #1e174d;
+
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    &__counter {
+        p {
+            font-weight: 300;
+            font-size: 16px;
+
+            color: #9895a7;
+
+            span {
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: -16px;
+        top: calc(50% - 16px);
+
+        @include iconButton();
+
+        transform: rotate(180deg);
+
+        z-index: 10;
+
+        transition: all .4s ease-in-out;
+    }
+
+    &:hover .group__btn {
+        background-color: #6f61d0;
+
+        svg path {
+            stroke: #ffffff;
+        }
+    }
+
+    &::before {
+        content: "";
+
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 3px;
+        height: 40px;
+
+        background: #e2d341;
+        border-radius: 0px 2px 2px 0px;
+
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@mixin group() {
+    input[type="radio"] {
+        display: none;
+
+        &:checked + .group {
+            background-color: #6f61d0;
+            & .group__title {
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            & .group__counter {
+                p {
+                    color: #c9c4ed;
+                }
+            }
+
+            & .group__point {
+                background-color: #8175d6;
+            }
+
+            & .group__btn {
+                transform: rotateX(180deg);
+            }
+
+            &.group_purple {
+                .point_active {
+                    background-color: #ffffff !important;
+                }
+
+                &::before {
+                    background-color: #ffffff;
+                }
+            }
+
+            &:hover {
+                & .group__btn {
+                    background-color: #fff;
+
+                    svg path {
+                        stroke: #1e174d;
+                    }
+                }
+            }
+        }
+    }
+
+    .group {
+        @include groupLabel();
+    }
+}
+
+@mixin recomendationGroup {
+    @include group();
+
+    .group {
+        &__header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__counter {
+            margin: 3px 0 0 0;
+        }
+    }
+}
+@mixin taskGroup {
+    @include group();
+
+    .group {
+        &__header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__progress {
+            margin: 18px 0 0 0;
+
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__point {
+            height: 6px;
+
+            background-color: #f7f6fb;
+            border-radius: 50px;
+
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,251 @@
+.consultation {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // .consultation__search
+
+    &__search {
+        margin: 20px 0 40px 0;
+    }
+
+    // .consultation__header
+
+    &__header {
+    }
+
+    // .consultation__list
+
+    &__list {
+        margin: 5px 0 0 0;
+        width: 100%;
+    }
+
+    // .consultation__element
+
+    &__element {
+        margin: 20px 0 0 0;
+        width: 100%;
+        height: 76px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #f7f6fb;
+    }
+
+    &__person {
+        width: 430px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    // .consultation__icon
+
+    &__icon {
+        margin: 0 20px 0 0;
+
+        width: 52px;
+        height: 52px;
+
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+        border: 3px solid #f7f6fb;
+
+        overflow: hidden;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    // .consultation__title
+
+    &__title {
+    }
+
+    // .consultation__name
+
+    &__name {
+        p {
+            font-weight: 600;
+            font-size: 17px;
+
+            color: #1e174d;
+        }
+    }
+
+    // .consultation__experience
+
+    &__experience {
+        margin: 5px 0 0 0;
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+
+            color: #9e97be;
+        }
+    }
+
+    // .consultation__specialization
+
+    &__specialization {
+        width: 200px;
+
+        display: flex;
+        justify-content: center;
+        p {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    &__cost {
+        width: 200px;
+
+        display: flex;
+        justify-content: center;
+        p {
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #6f61d0;
+        }
+    }
+
+    &__btns {
+        width: 196px;
+        button {
+            padding: 10px 0;
+
+            width: 100%;
+
+            background: #ffffff00;
+
+            border: 1px solid #9e97be;
+            box-sizing: border-box;
+            border-radius: 50px;
+
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #9e97be;
+
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                border: 1px solid #6f61d0;
+                background: #6f61d0;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.list-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    // .list-header__name
+
+    &__name {
+        width: 430px;
+    }
+
+    // .list-header__specialixation
+
+    &__specialization {
+        width: 200px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    // .list-header__cost
+
+    &__cost {
+        width: 200px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    // .list-header__appointment
+
+    &__appointment {
+        width: 196px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+
+        /* Background black */
+        color: #1e174d;
+    }
+}
+
+.nearest {
+    padding: 30px;
+
+    width: 100%;
+
+    border: 1px solid #9e97be;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    &__title {
+        p {
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #d06361;
+        }
+    }
+
+    // .nearest__text
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #736f8b;
+        }
+
+        a {
+            font-weight: 300;
+            font-size: 16px;
+
+            color: #9895a7;
+        }
+    }
+}
+
+.color_green {
+    color: #61d0a7;
+}
+
+.color_blue{
+    color: #49B1E0;
+}

@@ -1,0 +1,47 @@
+.taskcreator {
+    padding: 0 16px 0 30px;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff00;
+
+    border: 1px solid #6f61d0;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    &__date {
+        p {
+            font-weight: 500;
+            font-size: 18px;
+
+            color: #6f61d0;
+        }
+    }
+
+    &__btn {
+        button {
+            padding: 7px 15px;
+            background: #ffffff00;
+
+            border: 1px solid #6f61d0;
+            box-sizing: border-box;
+            border-radius: 100px;
+
+            font-weight: 400;
+            font-size: 14px;
+
+            color: #6f61d0;
+
+            transition: all .2s ease;
+
+            &:hover{
+                background-color: #6f61d0;
+                color: #ffffff;
+            }
+        }
+    }
+}

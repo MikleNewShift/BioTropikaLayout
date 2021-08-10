@@ -1,0 +1,128 @@
+.rate {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rate__card {
+  width: 384px;
+  height: 534px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 40px rgba(111, 97, 208, 0.11);
+          box-shadow: 0px 0px 40px rgba(111, 97, 208, 0.11);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rate__top {
+  margin: 30px 0 0 0;
+}
+
+.rate__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rate__prise-text p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #6f61d0;
+}
+
+.rate__prise-sub {
+  margin: 0 0 0 10px;
+}
+
+.rate__prise-sub p {
+  font-weight: 400;
+  font-size: 17px;
+  color: #9e97be;
+}
+
+.rate__headline {
+  margin: 20px 0 0 0;
+}
+
+.rate__headline h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rate__list {
+  width: 324px;
+}
+
+.rate__list-elem {
+  margin: 20px 0 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rate__list-elem img {
+  margin: 0 15px 0 0;
+}
+
+.rate__bottom {
+  margin: 0 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.rate__btn {
+  width: 324px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.rate__btn button {
+  padding: 7px 15px;
+  background-color: #ffffff00;
+  border: 1px solid #6f61d0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6f61d0;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.rate__btn button:hover {
+  background-color: #6f61d0;
+  color: #ffffff;
+}
